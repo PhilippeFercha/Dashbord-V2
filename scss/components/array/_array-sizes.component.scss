@@ -1,0 +1,29 @@
+/***************************
+****************************
+ARRAY BLOCK
+SIZES
+****************************
+****************************/
+
+.block-array {
+
+	$i : 1;
+	@while $i <= 15 {
+		&.col-#{$i} {
+			.block-content-header,
+			.block-content-section {
+				.array-line {
+					.array-item-cell {
+						width: calc(99.9% / #{$i});
+						float: left;
+
+						@include MQ(tablet) {
+							width: calc(1170px / #{$i});
+						}
+					}
+				}
+			}
+		}
+		$i : $i + 1;
+	}
+}

@@ -1,0 +1,34 @@
+/***************************
+****************************
+AUTHENTIFICATION BLOCK
+SECTION
+****************************
+****************************/
+
+.block-authentification {
+	.block-authentification-section {
+		@include span(6 of 8);
+		@include pre(1 of 8);
+		padding: 30px 0;
+
+		@include MQ(mobile) {
+			@include span(full);
+			@include pre(0);
+			padding: 30px 15px;
+		}
+
+		.field-actions {
+			text-align: center;
+
+			input {
+				&[type="submit"] {
+					max-width: 170px;
+
+					@include MQ(mobile) {
+						max-width: none;
+					}
+				}
+			}
+		}
+	}
+}

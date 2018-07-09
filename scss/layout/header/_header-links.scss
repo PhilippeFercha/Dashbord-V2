@@ -1,0 +1,57 @@
+/***************************
+****************************
+HEADER BLOCK
+LINKS
+****************************
+****************************/
+
+header {
+	&[role="banner"] {
+		.block-user {
+			.block-links {
+				text-align: right;
+				right: 15px;
+				transform: translateY(-50%);
+
+				@include MQ(tablet) {
+					@include span(6 last of 12);
+				}
+
+				a {
+					display: inline-block;
+
+					&:nth-of-type(1) {
+						@include MQ(large) {
+							display: none;
+						}
+
+						span {
+							position: relative;
+							top: -5px;
+						}
+
+						i {
+							@include adjust-font-size-to(18px);
+							@include adjust-leading-to(1);
+							margin-left: 15px;
+						}
+					}
+
+					&:nth-of-type(2) {
+						display: none;
+
+						@include MQ(large) {
+							display: inline-block;
+							margin-left: 15px;
+						}
+
+						i {
+							@include adjust-font-size-to(24px);
+							@include adjust-leading-to(1);
+						}
+					}
+				}
+			}
+		}
+	}
+}

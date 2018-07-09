@@ -1,0 +1,13 @@
+/***************************
+****************************
+BUTTON BLOCK
+STATES
+****************************
+****************************/
+
+.button {
+	&.is-active {
+		background-image: none;
+		background-color: $thirdly-color;
+	}
+}

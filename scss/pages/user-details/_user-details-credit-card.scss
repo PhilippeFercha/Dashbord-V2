@@ -1,0 +1,168 @@
+/***************************
+****************************
+USER DETAILS BLOCK
+CREDIT CARD
+****************************
+****************************/
+
+.block-user-details-credit-card {
+
+	/// Couleur de background du bloc
+	/// @author Antoine Feron
+	/// @type Color
+	/// @since v1.0.0
+	$background-color-user-details-credit-card: #fff;
+
+	
+	.block-credit-card-item {
+		@include span(full);
+		background-color: $background-color-user-details-credit-card;
+
+		&:not(:nth-of-type(1)) {
+			margin-top: 15px;
+		}
+
+		.block-content {
+			min-height: 200px;
+
+			@include MQ(tablet) {
+				min-height: auto;
+				border-left: none;
+				border-right: none;
+			}
+
+			.block-content-center {
+				@include MQ(tablet) {
+					position: relative;
+					transform: none;
+				}
+			}
+			
+			&.status {
+				@include span(2 of 12);
+				text-align: center;
+
+				@include MQ(tablet) {
+					@include span(full);
+					min-height: auto;
+					text-align: left;
+				}
+			}
+
+			&.infos {
+				@include span(3 of 12);
+
+				@include MQ(tablet) {
+					@include span(6 of 12);
+					min-height: 200px;
+				}
+
+				@include MQ(mobile) {
+					@include span(full);
+					min-height: auto;
+				}
+			}
+
+			&.card {
+				@include span(2 of 12);
+				
+				@include MQ(tablet) {
+					@include span(6 last of 12);
+					min-height: 200px;
+				}
+
+				@include MQ(mobile) {
+					@include span(full);
+					min-height: auto;
+				}
+			}
+
+			&.links {
+				@include span(4 of 12 inside no-gutters);
+				padding-left: gutters();
+				padding-right: gutters();
+
+				@include MQ(tablet) {
+					@include span(full);
+				}
+			}
+
+			&.form {
+				@include span(4 of 12 inside no-gutters);
+				padding: gutters();
+
+				@include MQ(tablet) {
+					@include span(10 of 12);
+				}
+
+				@include MQ(mobile) {
+					@include span(full);
+				}
+			}
+
+			&.actions {
+				@include span(1 last of 12);
+				text-align: center;
+				background-color: $secondary-color;
+
+				@include MQ(tablet) {
+					@include span(full);
+				}
+
+				@include MQ(mobile) {
+					background-color: $secondary-color;
+				}
+			}
+		}
+
+		&.not-allowed {
+			cursor: not-allowed;
+			opacity: 0.6;
+
+			.block-content {
+				&.status {
+					i {
+						&:before {
+							color: $color-dark-not-allowed;
+						}
+					}
+
+					span {
+						color: $color-dark-not-allowed;
+					}
+				}
+
+				&.links {
+					.block-item {
+						span {
+							color: $color-dark-not-allowed;
+						}
+					}
+				}
+
+				&.infos,
+				&.card {
+					.block-item {
+						.block-item-value {
+							color: $color-dark-not-allowed;
+						}
+					}
+				}
+
+				&.actions {
+					background-color: $background-color-not-allowed;
+
+					.block-item {
+						color: $color-dark-not-allowed;
+					}
+				}
+
+				&.last {
+					@include MQ(tablet) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

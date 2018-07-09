@@ -1,0 +1,69 @@
+/***************************
+****************************
+SEARCH FILTER BLOCK
+MORE TITLE
+****************************
+****************************/
+
+.block-filter-more {
+	.block-filter-more-title {
+		.block-content-wrapper {
+			@include span(full);
+			*zoom: 1;
+		    background-image: linear-gradient(to right, #125b97 0%, #0086c7 100%);
+		    background-size: 100%;
+			padding: 20px;
+
+			h3 {
+				@include adjust-font-size-to(20px);
+				@include adjust-leading-to(1);
+				font-weight: 300;
+				margin-right: 20px;
+				color: #fff;
+
+				@include MQ(mobile) {
+					@include adjust-font-size-to(16px);
+					@include adjust-leading-to(1);
+				}
+			}
+
+			.field-wrapper {
+				width: auto;
+				margin-bottom: 0;
+
+				@include MQ(mobile) {
+					display: none;
+				}
+
+				input {
+					&[type="checkbox"] {
+						+ label {
+							font-weight: 300;
+							color: #fff;
+						}
+					}
+				}
+			}
+
+			h3,
+			.field-wrapper {
+				float: left;
+			}
+
+			button {
+				position: absolute;
+				top: 50%;
+				right: 30px;
+				transform: translateY(-50%);
+
+				i {
+					&:before {
+						@include adjust-font-size-to(20px);
+						@include adjust-leading-to(1);
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}

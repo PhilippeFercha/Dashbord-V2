@@ -1,0 +1,27 @@
+/***************************
+****************************
+SHORTCODES
+PULLQUOTES
+****************************
+****************************/
+
+.pullquote {
+	@include adjust-font-size-to(14px);
+	@include adjust-leading-to(1.25);
+	font-style: italic;
+	width: 260px;
+    margin: 15px 0;
+
+    &.align-left {
+    	float: left;
+   		padding: 0px 15px;
+    	border-left: 4px solid $secondary-color;
+    }
+
+    &.align-right {
+	    float: right;
+	    padding: 0px 15px;
+	    text-align: right;
+	    border-right: 4px solid $secondary-color;
+    }
+}

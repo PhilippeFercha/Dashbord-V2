@@ -1,0 +1,294 @@
+/// Utilisation simplifiée des media-queries
+///
+/// @author Antoine Feron
+/// @param {String} $canvas - Type de support [mobile|tablet|large|desktop|large-desktop|canvas]
+/// @example scss - Usage basique en entrée (SCSS)
+///    .only-on-mobile {
+///        @include MQ(mobile);
+///    }
+///
+/// @example scss - Usage basique en sortie (CSS)
+///		@media only screen and (max-width: 480px) {
+///    		.only-on-mobile {
+///        		...
+///    		}
+///    }
+
+@mixin MQ($canvas) {
+  @if $canvas == mobile {
+	  @media only screen and (max-width: $mobile) { @content; } 
+  }
+  @else if $canvas == tablet {
+	@media only screen and (max-width: $tablet) { @content; } 
+  }
+  @else if $canvas == large {
+	@media only screen and (max-width: $large) { @content; } 
+  }
+  @else if $canvas == desktop {
+	  @media only screen and (max-width: $desktop) { @content; } 
+  }
+   @else if $canvas == large-desktop {
+	@media only screen and (max-width: $large-desktop) { @content; } 
+  }
+  @else {
+	@media only screen and (max-width: $canvas) { @content; } 
+  }
+}
+
+/// Anti-aliasing mode pour les fonts
+///
+/// @author Antoine Feron
+/// @example scss - Usage basique en entrée (SCSS)
+///    .font-smoothing {
+///        @include font-smoothing;
+///    }
+///
+/// @example scss - Usage basique en sortie (CSS)
+/// 	.font-smoothing {
+///      	-webkit-font-smoothing: antialiased;
+///  		-moz-osx-font-smoothing: grayscale;
+///    	}
+
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/// Génération de grille via le framework Susy (V2)
+///
+/// @author Antoine Feron
+/// @param {String} $position - Définir la position de la grille [left|center|right]
+/// @param {Number} $column - Définir le nombre de colonnes
+/// @param {Number} $width - Définir la largeur des colonnes
+/// @param {Number} $gutter - Définir la largeur des gouttières
+///
+/// @example scss - Usage basique en entrée (SCSS)
+///    susy-grid(center, 12, 70px, 30px);
+
+@function susy-grid($position, $columns, $width, $gutter) {
+	@return (
+		math: fluid,
+		container: auto,
+		container-position: $position,
+		columns: $columns,
+		column-width: $width,
+		gutters: $gutter / $width,
+		use-custom: (rem: true)
+	);
+}
+
+
+/// Customisation des placeholders pour les inputs
+///
+/// @author Antoine Feron
+/// @example scss - Usage basique en entrée (SCSS)
+///    .input-placeholder {
+///     	@include input-placeholder {
+///				font-size: 14px;
+///				line-height: 19px;
+///			}
+///		}
+///
+/// @example scss - Usage basique en sortie (CSS)
+/// 	.input-placeholder {
+///			&::-webkit-input-placeholder {
+///				font-size: 14px;
+///				line-height: 19px;
+///			}
+///
+///			&::-moz-placeholder {
+///				font-size: 14px;
+///				line-height: 19px;
+///			}
+///
+///			&:-moz-placeholder {
+///				font-size: 14px;
+///				line-height: 19px;
+///			}
+///
+///			&::-ms-input-placeholder {
+///				font-size: 14px;
+///				line-height: 19px;
+///			}
+///		}
+
+@mixin input-placeholder {
+	&:-moz-placeholder { @content; }
+	&::-moz-placeholder { @content; }
+	&:-ms-input-placeholder { @content; }
+	&::-webkit-input-placeholder { @content; }
+}
+
+
+/// Centrer un élement par rapport à son parent
+///
+/// @author Antoine Feron
+/// @param {Boolean} $horizontal [true] - Centrer à l'horizontal
+/// @param {Boolean} $vertical [true] - Centrer à la verticale
+/// @example scss - Usage basique en entrée (SCSS)
+///     .center-horizontal-and-vertical {
+///     	@include center;
+///     }
+///
+///     .center-horizontal {
+///     	@include center(true, false);
+///     }
+///
+///     .center-vertical {
+///     	@include center(false, true);
+///     }
+///
+/// @example scss - Usage basique en sortie (CSS)
+///     .center-horizontal-and-vertical {
+///         position: absolute;
+///         top: 50%;
+///         left: 50%;
+///         transform: translate(-50%, -50%);
+///     }
+///
+///     .center-horizontal {
+///         position: absolute;
+///         top: 0;
+///         left: 50%;
+///         transform: translateX(-50%);
+///     }
+///
+///     .center-vertical {
+///         position: absolute;
+///         top: 50%;
+///         left: 0;
+///         transform: translateY(-50%);
+///     }
+
+@mixin center($horizontal: true, $vertical: true) {
+  	@if ($horizontal and $vertical) {
+  		position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+  	} @else if ($horizontal) {
+  		position: absolute;
+      	top: 0;
+    	left: 50%;
+    	transform: translateX(-50%);
+  	} @else if ($vertical) {
+  		position: absolute;
+    	top: 50%;
+      	left: 0;
+    	transform: translateY(-50%);
+  	} @else {
+  		position: static;
+  		transform: none;
+  	}
+}
+
+
+/// Habillage des tooltips.
+/// Utiliser sans arguments pour la couleur par défaut
+///
+/// @author Antoine Feron
+/// @param {color} $color - Définir la couleur de la box
+/// @param {color} $textColor - Définir la couleur des textes
+/// @param {String} $position - Définir le type de position [top|bottom|left|right]
+/// @example scss - Usage basique en entrée (SCSS)
+///    .simptip-movable {
+///			@include apply-color(#62c462, #ecf0f1);
+///		}
+///
+/// @example scss - Usage basique en sortie (CSS)
+///		.simptip-movable.simptip-position-top:before {
+///  		border-top-color: #62c462;
+///		}
+///		.simptip-movable.simptip-position-top:after {
+///  		background-color: #62c462;
+///  		color: #ecf0f1;
+///		}
+///		.simptip-movable.simptip-position-bottom:before {
+///  		border-bottom-color: #62c462;
+///		}
+///		.simptip-movable.simptip-position-bottom:after {
+///  		background-color: #62c462;
+///  		color: #ecf0f1;
+///		}
+///		.simptip-movable.simptip-position-left:before {
+///  		border-left-color: #62c462;
+///		}
+///		.simptip-movable.simptip-position-left:after {
+///  		background-color: #62c462;
+///  		color: #ecf0f1;
+///		}
+///		.simptip-movable.simptip-position-right:before {
+///  		border-right-color: #62c462;
+///		}
+///		.simptip-movable.simptip-position-right:after {
+///  		background-color: #62c462;
+///  		color: #ecf0f1;
+///		}
+///		.simptip-movable.simptip-position-top.half-arrow:before {
+///  		border-right: 7px solid #62c462;
+///		}
+///		.simptip-movable.simptip-position-bottom.half-arrow:before {
+///  		border-right: 7px solid #62c462;
+///		}
+
+@mixin apply-color($color:$tooltipColor, $textColor:$tooltipTextColor) {
+	@each $position in top, bottom, left, right {
+		&.simptip-position-#{$position}{
+	  		&:before{border-#{$position}-color: $color;}
+	  		&:after{background-color: $color; color: $textColor;}
+		}
+  	}
+  	@each $position in top, bottom {
+		&.simptip-position-#{$position} {
+	  		&.half-arrow {
+				&:before {border-right: $arrowSize+1px solid $color;}
+	 		}
+		}
+  	}
+}
+
+//generate multiline tooltips
+@mixin multiline ($width: 150px, $align: left) {
+	height: auto;
+	width: $width;
+	padding: $tooltipHeight/2;
+	line-height: $tooltipHeight - 3px;
+	white-space: normal;
+	text-align: $align;
+}
+
+//generate keyframe
+@mixin keyframes($animationName) {
+	@-webkit-keyframes #{$animationName} {
+		@content;
+	}
+	@-moz-keyframes #{$animationName} {
+		@content;
+	}
+	@-o-keyframes #{$animationName} {
+		@content;
+	}
+	@keyframes #{$animationName} {
+		@content;
+	}
+}
+
+//generate animation
+@mixin animate($name, $duration, $iteration, $direction) {
+  -webkit-animation-duration: $duration;
+     -moz-animation-duration: $duration;
+       -o-animation-duration: $duration;
+          animation-duration: $duration;
+  -webkit-animation-iteration-count: $iteration;
+     -moz-animation-iteration-count: $iteration;
+       -o-animation-iteration-count: $iteration;
+          animation-iteration-count: $iteration;
+  -webkit-animation-name: $name;
+     -moz-animation-name: $name;
+       -o-animation-name: $name;
+          animation-name: $name;
+  -webkit-animation-direction: $direction;
+     -moz-animation-direction: $direction;
+       -o-animation-direction: $direction;
+          animation-direction: $direction;
+}

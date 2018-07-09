@@ -1,0 +1,23 @@
+/***************************
+****************************
+BACKGROUND BLOCK
+CORE
+****************************
+****************************/
+
+.page-background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 150;
+
+	.content-open & {
+		z-index: 750;
+	}
+
+	.transaction-open & {
+		z-index: 150;
+	}
+}

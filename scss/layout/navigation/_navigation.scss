@@ -1,0 +1,132 @@
+/***************************
+****************************
+NAVIGATION BLOCK
+CORE
+****************************
+****************************/
+
+@include keyframes(show-navigation) {
+   0%   { 
+		left: -220px; 
+	}
+	100% { 
+		left: 0; 
+	}
+}
+
+.block-inside-navigation {
+	position: fixed;
+	width: 210px;
+	height: 100%;
+	min-height: 100vh;
+	z-index: 200;
+	background-color: $thirdly-color;
+
+  	@include animate(show-navigation, .45s, linear, normal);
+
+	@include MQ(desktop) {
+		@include span(full);
+		position: static;
+		height: auto;
+		min-height: auto;
+	}
+
+	ul {
+		@include MQ(desktop) {
+			text-align: center;
+		}
+		
+		li {
+			position: relative;
+			margin-bottom: 0;
+			list-style-type: none;
+			border-bottom: 1px solid $secondary-color;
+
+			@include MQ(desktop) {
+				display: inline-block;
+				border-bottom: none;
+			}
+
+			&.username {
+				@include adjust-font-size-to(25px);
+				@include adjust-leading-to(1);
+				color: #fff;
+				padding: 20px 30px;
+
+				@include MQ(desktop) {
+					display: none;
+				}
+			}
+
+			.inside-navigation-link {
+				@include adjust-font-size-to(15px);
+				@include adjust-leading-to(1);
+				font-weight: 300;
+				color: #fff;
+				position: relative;
+				padding: 15px 30px;
+
+				@include MQ(desktop) {
+					padding: 10px 15px;
+				}
+
+				&:before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 0;
+					height: 100%;
+					z-index: -10;
+					background-color: $secondary-color;
+					transition: width .45s ease;
+				}
+
+				&:after {
+					content: "";
+					position: absolute;
+					bottom: 20px;
+					left: 0;
+					border-left: 10px solid  $thirdly-color;
+					border-top: 10px solid transparent;
+					border-bottom: 10px solid transparent;
+					opacity: 0;
+					transition: left .45s ease, opacity .25s ease;
+
+					@include MQ(desktop) {
+						display: none;
+					}
+				}
+
+				&:hover {
+					&:before {
+						width: 100%;
+						transition: width .45s ease;
+					}
+
+					&:after {
+						left: 100%;
+						border-left-color: $secondary-color;
+						opacity: 1;
+						transition: left .45s ease, opacity .45s ease;
+					}
+				}
+
+				&.is-active {
+					background-color: $secondary-color;
+					font-weight: 500;
+
+					@include MQ(desktop) {
+						background-color: transparent;
+					}
+
+					&:after {
+						left: 100%;
+						border-left-color: $secondary-color;
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}

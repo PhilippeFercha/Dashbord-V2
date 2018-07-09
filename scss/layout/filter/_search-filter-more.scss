@@ -1,0 +1,40 @@
+/***************************
+****************************
+SEARCH FILTER BLOCK
+MORE
+****************************
+****************************/
+
+.block-filter-more {
+	@include span(full);
+	position: relative;
+	top: 0;
+	max-height: 0;
+	overflow: hidden;
+	z-index: 75;
+	transition: max-height .45s ease;
+
+	&.is-open {
+		.user & {
+			max-height: 240px;
+
+			@include MQ(tablet) {
+				max-height: 440px;
+			}
+		}
+
+		.transaction &,
+		.user-details & {
+			max-height: 390px;
+
+			@include MQ(mobile) {
+				max-height: 1055px;
+			}
+		}
+	}
+
+	.block-filter-more-title,
+	.block-filter-more-form {
+		@include span(full);
+	}
+}

@@ -1,0 +1,159 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+html,
+html a {
+	@include font-smoothing;
+}
+
+body {
+	font-family: $primary-font;
+	font-size: 12px;
+	font-weight: 300;
+	color: $primary-color;
+	background-color: $body-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $primary-font;
+	font-weight: 500;
+}
+
+h1 {
+	@include adjust-font-size-to(32px);
+	@include adjust-leading-to(1);
+}
+
+h2 {
+	@include adjust-font-size-to(28px);
+	@include adjust-leading-to(1);
+}
+
+h3 {
+	@include adjust-font-size-to(26px);
+	@include adjust-leading-to(1);
+}	
+
+h4 {
+	@include adjust-font-size-to(24px);
+	@include adjust-leading-to(1);
+}
+
+h5 {
+	@include adjust-font-size-to(22px);
+	@include adjust-leading-to(1);
+}
+
+h6 {
+	@include adjust-font-size-to(20px);
+	@include adjust-leading-to(1);
+}
+
+p {
+	@include adjust-font-size-to(12px);
+	@include adjust-leading-to(1.25);
+}
+
+ul {
+	list-style-type: disc;
+	list-style-position: inside;
+
+	li {
+		@include adjust-font-size-to(12px);
+		@include adjust-leading-to(1.25);
+		color: $secondary-color;
+
+		span {
+			color: $primary-color;
+		}
+	}
+}
+
+blockquote {
+	quotes: none;
+
+	p {
+		@include adjust-font-size-to(14px);
+		@include adjust-leading-to(1.25);
+		font-style: italic;
+	    padding: 5px 0 5px 15px;
+	    border-left: 4px solid $secondary-color;
+	}
+}
+
+p,
+a,
+ul li {
+	font-weight: 300;
+}
+
+sup {
+	@include adjust-font-size-to(10px);
+	@include adjust-leading-to(1);
+	position: relative;
+	top: 5px;
+	vertical-align: super;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+p,
+ul li,
+sup {
+	color: $primary-color;
+}
+
+a {
+	display: block;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+b,
+strong {
+	font-weight: 500;
+}
+
+em {
+	font-style: italic;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	width: 100%;
+}
+
+button {
+	padding: 0;
+	border: none;
+	cursor: pointer;
+	font-family: $primary-font;
+	background-color: transparent;
+}

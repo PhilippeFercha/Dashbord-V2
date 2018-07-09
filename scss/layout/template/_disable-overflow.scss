@@ -1,0 +1,16 @@
+/***************************
+****************************
+DISABLE OVERFLOW CSS
+****************************
+****************************/
+
+body {
+	&.menu-open,
+	&.content-open {
+		overflow: hidden;
+	}
+}
+
+.wrapper-content {
+	padding-bottom: 70px;
+}

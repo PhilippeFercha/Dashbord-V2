@@ -1,0 +1,18 @@
+.block-container {
+	@include container($susy);
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	.user-details &,
+	.support-plus & {
+		@include container($susy2);
+		margin-right: 15px;
+		margin-left: 225px;
+
+		@include MQ(desktop) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+}

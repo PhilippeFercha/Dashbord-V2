@@ -1,0 +1,154 @@
+/***************************
+****************************
+USER DETAILS BLOCK
+CORE
+****************************
+****************************/
+
+*[class^="block-user-details-"]{
+	@include span(full);
+	padding-top: 20px;
+
+	.block-content {
+		&:not(.block-content-scrollbar) {
+			@include span(full);
+			position: relative;
+
+			@include MQ(tablet) {
+				padding: 15px;
+			}
+		}
+		
+		.block-content-center {
+			@include center(false, true);
+			width: 100%;
+			padding-left: gutters();
+			padding-right: gutters();
+
+			@include MQ(tablet) {
+				padding-left: 0;
+				padding-right: 0;
+			}
+
+			@include MQ(mobile) {
+				@include center(false, false);
+			}
+		}
+	}
+
+	.block-item {
+		@include span(full);
+
+		&:not(:first-child) {
+			margin-top: 10px;
+		}
+
+		.block-item-title {
+			font-weight: 300;
+			text-transform: uppercase;
+			color: $primary-color;
+		}
+
+		.block-item-value {
+			font-weight: 400;
+			color: $thirdly-color;
+		}
+
+		.block-item-title,
+		.block-item-value {
+			@include adjust-font-size-to(12px);
+			@include adjust-leading-to(1);
+			word-break: break-all;
+			padding: 0 10px;
+
+			@include MQ(tablet) {
+				padding: 0;
+			}
+		}
+
+		.block-item-edit {
+			i {
+				@include adjust-font-size-to(18px);
+				@include adjust-leading-to(1);
+				position: relative;
+				bottom:  6.5px;
+				left:  6.5px;
+
+				&:before {
+					color: $thirdly-color;
+				}
+			}
+		}
+
+		.block-item-value,
+		.block-item-edit {
+			float: left;
+		}
+	}
+
+	.block-links {
+		.block-link {
+			@include adjust-font-size-to(13px);
+			@include adjust-leading-to(1);
+			font-weight: 500;
+			text-align: center;
+			text-transform: uppercase;
+			color: $thirdly-color;
+
+			span {
+				@include adjust-font-size-to(15px);
+				@include adjust-leading-to(1);
+				font-weight: 700;
+				color: $secondary-color;
+			}
+		}
+	}
+
+	.block-buttons {
+		.block-button {
+			width: 100%;
+
+			&:not(:nth-of-type(1)) {
+				$margin-top: 40px;
+
+				margin-top: $margin-top;
+
+				@include MQ(tablet) {
+					margin-top: $margin-top / 2;
+				}
+			}
+		}
+	}
+
+	.block-actions {
+		.block-action {
+			@include adjust-font-size-to(13px);
+			@include adjust-leading-to(1);
+			font-weight: 500;
+			text-transform: uppercase;
+			color: #fff;
+			padding: 25px 0;
+
+			&:not(:nth-of-type(1)) {
+				border-top: 1px solid #fff;
+
+				@include MQ(tablet) {
+					border-top: 0;
+				}
+			}
+
+			@include MQ(tablet) {
+				display: inline-block;
+				padding: 0 25px;
+			}
+
+			i {
+				&:before {
+					@include adjust-font-size-to(26px);
+					@include adjust-leading-to(1);
+					color: #fff;
+				}
+			}
+		}
+	}
+}

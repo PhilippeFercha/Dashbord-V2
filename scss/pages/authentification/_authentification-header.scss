@@ -1,0 +1,97 @@
+/***************************
+****************************
+AUTHENTIFICATION BLOCK
+HEADER
+****************************
+****************************/
+
+.block-authentification {
+
+	/// Couleur du titre du header
+	/// @author Antoine Feron
+	/// @type Color
+	/// @since v1.0.0
+	$color-title-header-authentification: $secondary-color;
+
+	/// Couleur du sous-titre du header
+	/// @author Antoine Feron
+	/// @type Color
+	/// @since v1.0.0
+	$color-subtitle-header-authentification: $primary-color;
+
+	/// Couleur de background du logo
+	/// @author Antoine Feron
+	/// @type Color
+	/// @since v1.0.0
+	$background-color-logo-authentification: $thirdly-color;
+
+	/// Taille max. du logo
+	/// @author Antoine Feron
+	/// @type Number
+	/// @since v1.0.0
+	$size-logo-authentification: 179px;
+
+	.block-authentification-header {
+		display: flex;
+
+		@include MQ(mobile) {
+			padding: 15px;
+		}
+
+		.authentification-header-logo {
+			@include span(3 of 8);
+			padding: 30px 15px;
+			text-align: center;
+			background-color: $background-color-logo-authentification;
+
+			@include MQ(mobile) {
+				display: none;
+			}
+
+			img {
+				max-width: $size-logo-authentification;
+			}
+		}
+
+		.authentification-header-title {
+			@include span(5 last of 8);
+			position: relative;
+
+			@include MQ(mobile) {
+				@include span(full);
+			}
+
+			.header-title-wrapper {
+				@include center(false, true);
+
+				@include MQ(mobile) {
+					@include center(false, false);
+				}
+				
+				h1 {
+					@include adjust-font-size-to(40px);
+					@include adjust-leading-to(0.8);
+					font-weight: 300;
+					color: $color-title-header-authentification;
+
+					@include MQ(mobile) {
+						@include adjust-font-size-to(32px);
+						@include adjust-leading-to(0.8);
+					}
+				}
+
+				h2 {
+					@include adjust-font-size-to(20px);
+					@include adjust-leading-to(1);
+					font-weight: 300;
+					color: $color-subtitle-header-authentification;
+
+					@include MQ(mobile) {
+						@include adjust-font-size-to(14px);
+						@include adjust-leading-to(1);
+					}
+				}
+			}
+		}
+	}
+}

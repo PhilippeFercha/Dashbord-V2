@@ -1,0 +1,31 @@
+/***************************
+****************************
+HEADER BLOCK
+INFO
+****************************
+****************************/
+
+header {
+	&[role="banner"] {
+		.block-user {
+			.block-info {
+				left: 50%;
+				transform: translate(-50%, -50%);
+				text-align: center;
+
+				@include MQ(tablet) {
+					display: none;
+				}
+
+				a {
+					font-weight: 500;
+				}
+
+				a,
+				span {
+					display: inline-block;
+				}
+			}
+		}
+	}
+}

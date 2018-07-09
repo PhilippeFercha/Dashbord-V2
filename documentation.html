@@ -1,0 +1,790 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Espace partenaire - S-Money</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#125b97">
+        <meta name="theme-color" content="#125b97">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/vendor.min.css">
+        <link rel="stylesheet" href="css/screen.min.css">
+        
+        <!--[if lt IE 9]>
+            <script src="js/vendor/respond.min.js"></script>
+            <script src="js/vendor/mootools-1.6.0.js"></script>
+            <script src="js/vendor/selectivizr-min.js"></script>
+        <![endif]--> 
+
+    </head>
+    <body class="theme">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- MAIN CONTENT // -->
+        <div class="wrapper-content">
+        
+            <!-- LAYOUT : HEADER // -->
+            <header role="banner">
+                <div class="block-user">
+                    <div class="block-container">
+                        <a href="#" class="block-logo" title="Retour à l'accueil">
+                            <img src="img/logo/logo-smoney.png" alt="Logo - Smoney" role="logo">
+                        </a>
+                        <div class="block-info">
+                            <a href="mailto:mariegeraldine@caramail.com">mariegeraldine@caramail.com</a>
+                            <span>Administrateur BO ThirdParty</span>
+                        </div>
+                        <div class="block-links">
+                            <a href="#" title="Se déconnecter">
+                                <span>Se déconnecter</span>
+                                <i class="icon-close" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="icon-burger" data-action="open-menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- // LAYOUT : HEADER -->
+
+            <!-- MAIN CONTENT // -->
+            <section role="main">
+
+                <!-- LAYOUT : MENU // -->
+                <nav class="block-menu">
+                    <div class="block-container">
+                        <a href="#" class="menu-logo" title="Retour à l'accueil">
+                            <img src="img/logo/logo-smoney-small.png" alt="Logo - Smoney">
+                        </a>
+                        <ul class="menu-items">
+                            <li class="menu-item">
+                                <a href="#" class="menu-item-link">
+                                    <span>Tableau de bord</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="utilisateurs.html" class="menu-item-link">
+                                    <span>Utilisateurs</span>
+                                </a>
+                            </li>
+                            <!-- <li class="menu-item">
+                                <a href="gestionnaires.html" class="menu-item-link">
+                                    <span>Gestionnaires</span>
+                                </a>
+                            </li> -->
+                            <li class="menu-item">
+                                <a href="transactions.html" class="menu-item-link">
+                                    <span>Transactions</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="configuration-notifications.html" class="menu-item-link">
+                                    <span>Configuration</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-item-link">
+                                    <span>Administration</span>
+                                </a>
+                            </li>
+                            <li class="menu-item last">
+                                <a href="#" class="menu-item-link" data-action="open-panel-transaction">Créer une transaction</a>
+                            </li>
+                        </ul>
+                        <button class="menu-logout" title="Se déconnecter">
+                            <span>Se déconnecter</span>
+                            <i class="icon-close" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </nav>
+                <!-- // LAYOUT : MENU -->
+
+                <!-- MODULE : CREATE TRANSACTION // -->
+                <div class="block-transactions">
+                    <div class="block-transactions-wrapper">
+                        <section class="block-transaction step-1" data-step="1">
+                            <div class="block-container">
+                                <div class="block-content-wrapper">
+                                    <h1 class="block-transaction-title">Créer une transaction</h1>
+                                    <p  class="block-transaction-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                    <div class="block-transaction-buttons">
+                                        <button class="block-transaction-button button is-gradient-background" data-action="validate-step-create-transaction">
+                                            <span>Prélèvement</span>
+                                        </button>
+                                        <button class="block-transaction-button button is-gradient-background last" data-action="validate-step-create-transaction">
+                                            <span>Virement</span>
+                                        </button>
+                                        <!-- <button class="block-transaction-button button is-gradient-background" data-action="validate-step-create-transaction">
+                                            <span>Lorem</span>
+                                        </button>
+                                        <button class="block-transaction-button button is-gradient-background last" data-action="validate-step-create-transaction">
+                                            <span>ipsum</span>
+                                        </button> -->
+                                    </div>
+
+                                    <div class="block-transaction-actions">
+                                        <button class="block-transaction-button button is-grey" data-action="close-panel-transaction">
+                                            <span>Annuler</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="block-transaction step-2" data-step="2">
+                            <div class="block-container">
+                                <div class="block-content-wrapper">
+                                    <h1 class="block-transaction-title">Effectuer un virement</h1>
+                                
+                                    <form method="POST" action="#" class="block-transaction-form">
+                                        <div class="field-wrapper is-select">
+                                            <label for="debit">Compte à débiter <sup>*</sup></label>
+                                            <select name="debit" id="debit" class="custom-options debit" data-parsley-errors-container=".parsley-custom-error-debit" data-parsley-class-handler=".selectric-debit" required>
+                                                <option value="" selected>Veuillez choisir un compte</option> 
+                                                <option value="+ 10 125.00 €">Le compte de Jean</option>
+                                                <option value="+ 100 125.00 €">Le compte de Bernard</option>
+                                                <option value="+ 125.00 €">Le compte de Paul</option>
+                                                <option value="+ 2 225.00 €">Le compte de Jérôme</option>
+                                            </select>
+                                            <div class="parsley-custom-error-debit"></div>
+                                        </div>
+                                        <div class="field-wrapper is-select last">
+                                            <label for="credit">Compte à créditer <sup>*</sup></label>
+                                            <select name="credit" id="credit" class="custom-options credit" data-parsley-errors-container=".parsley-custom-error-credit" data-parsley-class-handler=".selectric-credit" required>
+                                                <option value="" selected>Veuillez choisir un compte</option> 
+                                                <option value="FR76131060050020000743520962">Le compte de Sandrine</option>
+                                                <option value="FR76131060050020000743520962">Le compte de Cedric</option>
+                                                <option value="FR76131060050020000743520962">Le compte de Yann</option>
+                                                <option value="FR76131060050020000743520962">Le compte de François</option>
+                                            </select>
+                                            <div class="parsley-custom-error-credit"></div>
+                                        </div>
+
+                                        <div class="field-wrapper is-input">
+                                            <label for="amount">Montant <sup>*</sup></label>
+                                            <input type="number" name="amount" id="amount" min="0" step="0.01" required>
+                                        </div>
+                                        <div class="field-wrapper is-input last">
+                                            <label for="reference">Référence <sup>*</sup></label>
+                                            <input type="text" name="reference" id="reference" required>
+                                        </div>
+                                         <div class="field-wrapper is-input is-large">
+                                            <label for="motif">Motif</label>
+                                            <input type="text" name="motif" id="motif">
+                                        </div>
+                                        <div class="field-wrapper is-input is-large">
+                                            <label for="message">Message</label>
+                                            <input type="text" name="message" id="message">
+                                        </div>
+
+                                        <div class="field-actions">
+                                            <button class="field-actions-button button is-grey" data-action="modify-step-create-transaction">
+                                                <span>Retour</span>
+                                            </button>
+                                            <input type="submit" value="VALIDER" class="field-actions-button button is-gradient-background last" data-action="validate-step-create-transaction">
+                                        </div>
+                                    </form>
+                                    
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="block-transaction step-3" data-step="3">
+                            <div class="block-container">
+                                <div class="block-content-wrapper">
+                                    <h1 class="block-transaction-title">Récapitulatif du virement</h1>
+                                    <div class="block-transaction-wrapper">
+                                        <section class="block-transaction-content">
+                                            <div class="transaction-content">
+                                                <h2 class="transaction-content-title">Compte à débiter</h2>
+                                                <h3 class="transaction-content-subtitle">Compte démonstration<br><span>AGFBFRCC</span></h3>
+                                                <p class="transaction-content-description"><b>+ 10 000 125.00 €</b></p>
+                                            </div>
+                        
+                                            <div class="transaction-content">
+                                                <h2 class="transaction-content-title">Montant</h2>
+                                                <p class="transaction-content-description"><b>+ 10 000 125.00 €</b></p>
+                                            </div>
+                                        </section>
+                        
+                                        <section class="block-transaction-content last">
+                                            <div class="transaction-content">
+                                                <h2 class="transaction-content-title">Compte à créditer</h2>
+                                                <h3 class="transaction-content-subtitle">Le compte de Sandrine<br><span>AGFBFRCC</span></h3>
+                                                <p class="transaction-content-description is-small"><b>FR76131060050020000743520962</b></p>
+                                            </div>
+                        
+                                            <div class="transaction-content">
+                                                <h2 class="transaction-content-title">Date</h2>
+                                                <p class="transaction-content-description"><b>30 / 03 / 2017</b></p>
+                                            </div>
+                                        </section>
+                        
+                                        <section class="block-transaction-content send-code">
+                                            <div class="send-code-content">
+                                                <h2 class="send-code-title">Munissez-vous de votre mobile</h2>
+                                                <p class="send-code-description">Vous allez recevoir un message sur votre téléphone concernant un code de sécurité</p>
+                                            </div>
+                        
+                                            <button class="button" data-action="send-code-validation-create-transaction">
+                                                <span>Recevoir le code</span>
+                                            </button>  
+                                        </section>
+                        
+                                        <section class="block-transaction-content confirm-code">
+                                            <div class="confirm-code-content">
+                                                <h2 class="confirm-code-title">Reporter le code de sécurité</h2>
+                                                <p class="confirm-code-description">Pour confirmer votre opération
+                                                <span>Si vous n’avez pas reçu de message sur votre mobile, vous pouvez renvoyer le code d’ici 30 secondes en <a href="#">cliquant ici</a></span></p>
+                                            </div>
+                        
+                                            <form lmethod="POST" action="#" class="confirm-code-form">
+                                                <input type="text" name="confirm_code">
+                                            </form>
+                                        </section>
+                                    </div>
+                        
+                                    <div class="block-transaction-actions">
+                                        <button class="block-transaction-button button is-grey" data-action="modify-step-create-transaction">
+                                            <span>Corriger les informations</span>
+                                        </button>
+                                        <button class="block-transaction-button button is-gradient-background last" data-action="validate-step-create-transaction">
+                                            <span>Confirmer le virement</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="block-transaction step-4" data-step="4">
+                            <div class="block-container">
+                                <div class="block-content-wrapper">
+                                    <h1 class="block-transaction-title">Confirmation du virement</h1>
+                                    <div class="block-transaction-wrapper">
+                                        <section class="block-transaction-content">
+                                            <div class="transaction-content">
+                                                <h2 class="transaction-content-title">Compte à débiter</h2>
+                                                <h3 class="transaction-content-subtitle">Compte démonstration<br><span>AGFBFRCC</span></h3>
+                                                <p class="transaction-content-description"><b>+ 10 000 125.00 €</b></p>
+                                            </div>
+
+                                            <div class="transaction-content">
+                                                <h2 class="transaction-content-title">Montant</h2>
+                                                <p class="transaction-content-description"><b>+ 10 000 125.00 €</b></p>
+                                            </div>
+                                        </section>
+
+                                        <section class="block-transaction-content last">
+                                            <div class="transaction-content">
+                                                <h2 class="transaction-content-title">Compte à créditer</h2>
+                                                <h3 class="transaction-content-subtitle">Le compte de Sandrine<br><span>AGFBFRCC</span></h3>
+                                                <p class="transaction-content-description is-small"><b>FR76131060050020000743520962</b></p>
+                                            </div>
+
+                                            <div class="transaction-content">
+                                                <h2 class="transaction-content-title">Date</h2>
+                                                <p class="transaction-content-description"><b>30 / 03 / 2017</b></p>
+                                            </div>
+                                        </section>
+
+                                        <section class="block-transaction-content message success">
+                                            <p class="message-description">
+                                                <i class="icon-check" aria-hidden="true"></i>
+                                                Votre demande de virement est bien enregistrée
+                                            </p>
+                                        </section>
+
+                                        <section class="block-transaction-content message error">
+                                            <p class="message-description">
+                                                <i class="icon-close" aria-hidden="true"></i>
+                                                Une erreur s'est produite lors de votre demande de virement
+                                            </p>
+                                        </section>
+                                    </div>
+
+                                    <div class="block-transaction-actions">
+                                        <button class="block-transaction-button button is-grey" data-action="close-panel-transaction">
+                                            <span>Quitter</span>
+                                        </button>
+                                        <button class="block-transaction-button button is-gradient-background last" data-action="reset-create-transaction">
+                                            <span>Faire un nouveau virement</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- // MODULE : CREATE TRANSACTION  -->
+
+                <!-- PAGE : STANDARD // -->
+                <section class="page-content">
+                    <div class="block-container">
+                        
+                        <section class="block-paragraph">
+                            <!-- HEADINGS // -->
+                            <h1>Ceci est mon titre de niveau 1</h1>
+                            <h2>Ceci est mon titre de niveau 2</h2>
+                            <h3>Ceci est mon titre de niveau 3</h3>
+                            <h4>Ceci est mon titre de niveau 4</h4>
+                            <h5>Ceci est mon titre de niveau 5</h5>
+                            <h6>Ceci est mon titre de niveau 6</h6>
+                            <!-- // HEADINGS -->
+
+                            <!-- LIST // -->
+                            <ul>
+                                <li><span>Ceci est une liste à puces</span></li>
+                                <li><span>Ceci est une liste à puces</span></li>
+                                <li><span>Ceci est une liste à puces</span></li>
+                                <li><span>Ceci est une liste à puces</span></li>
+                                <li><span>Ceci est une liste à puces</span></li>
+                                <li><span>Ceci est une liste à puces</span></li>
+                                <li><span>Ceci est une liste à puces</span></li>
+                            </ul>
+                            <!-- // LIST -->
+
+                            <!-- PARAGRAPH // -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <!-- BLOCKQUOTE // -->
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet, nunc ea, velit nisl, lorem lacus, pulvinar ac. Officia ipsum cras ut vel, odio dolor, nulla potenti nibh. Vestibulum convallis nulla amet quis. Lacus nulla suspendisse diam, posuere ipsum sit ac, tincidunt sapien, ut ipsum vel ligula nec pulvinar erat.</p>
+                            </blockquote>
+                            <!-- // BLOCKQUOTE -->
+
+                            <p>Fringilla penatibus orci est non mollit, suspendisse pulvinar egestas a donec. Vulputate mi dui suscipit, molestie vulputate libero fusce iaculis suscipit. Sapien pede libero. Maecenas lacus aliquet et nisl nunc, per sed sed maecenas.Lectus tincidunt pellentesque augue urna sit sed, arcu sed ante ac montes pellentesque consectetuer, neque magnis penatibus laoreet vehicula nulla orci, a malesuada justo laoreet ipsum, in ac fusce. At sapien neque sollicitudin lacus, dolor semper in laoreet, magnis convallis posuere adipiscing, dapibus suspendisse nonummy pellentesque consequat interdum odio. 
+                            <span class="pullquote align-left">Left. Suspendisse mi, id suspendisse ac mauris, wisi vel nam, sociis velit dolor vitae sem id quam, est vivamus elit mi fringilla aliquam euismod.</span> 
+                            Ut aenean pellentesque felis at turpis bibendum, duis eu consectetur sed tellus, blandit pulvinar dictum ac wisi libero a, nec sed ac elit. Fringilla penatibus orci est non mollit, suspendisse pulvinar egestas a donec, iaculis aenean, parturient velit elit ac viverra vestibulum, quis et nascetur rutrum nibh molestie fusce. Et quis magna elit varius magna, ac in iaculis donec ligula vehicula suspendisse. Sapien pede libero. Maecenas lacus aliquet et nisl nunc, per sed sed maecenas.Lectus tincidunt pellentesque augue urna sit sed, arcu sed ante ac montes pellentesque consectetuer, neque magnis penatibus laoreet vehicula nulla orci, a malesuada justo laoreet ipsum, in ac fusce.
+                            <span class="pullquote align-right">Right. Ut nulla nonummy eget sodales, sed nibh natoque purus wisi, sapien ut sollicitudin sed. At sapien neque sollicitudin lacus, dolor semper in laoreet</span>
+                            Magnis convallis posuere adipiscing, dapibus suspendisse nonummy pellentesque consequat interdum odio. Suspendisse mi, id suspendisse ac mauris, wisi vel nam, sociis velit dolor vitae sem id quam, est vivamus elit mi fringilla aliquam euismod. Hendrerit justo dolor. Sed euismod malesuada volutpat consectetuer cras, eu placerat felis, facilisi vivamus nec, malesuada cum tellus sed nunc duis nulla. Lacus nulla suspendisse diam, posuere ipsum sit ac, tincidunt sapien, ut ipsum vel ligula nec pulvinar erat. Lacus nulla suspendisse diam, posuere ipsum sit ac, tincidunt sapien, ut ipsum vel ligula nec pulvinar erat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                        </section>
+
+                        <!-- PARAGRAPH HALF // -->
+                        <section class="block-paragraph">
+                            <div class="one-half">
+                                <h3>1/2 COLUMNS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="one-half last">
+                                <h3>1/2 COLUMNS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </section>
+                        <!-- // PARAGRAPH HALF -->
+
+                        <!-- PARAGRAPH THIRD // -->
+                        <section class="block-paragraph"> 
+                            <div class="one-third">
+                                <h3>1/3 COLUMNS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="one-third">
+                                <h3>1/3 COLUMNS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="one-third last">
+                                <h3>1/3 COLUMNS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </section>
+                        <!-- // PARAGRAPH THIRD -->
+
+                        <!-- PARAGRAPH THIRD // -->
+                        <section class="block-paragraph"> 
+                            <div class="two-third">
+                                <h3>2/3 COLUMNS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="one-third last">
+                                <h3>1/3 COLUMNS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </section>
+                        <!-- // PARAGRAPH THIRD -->
+
+                        <!-- PARAGRAPH FOURTH // -->
+                        <section class="block-paragraph"> 
+                            <div class="one-fourth">
+                                <h3>1/4 COLUMNS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="one-fourth">
+                                <h3>1/4 COLUMNS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="one-fourth">
+                                <h3>1/4 COLUMNS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="one-fourth last">
+                                <h3>1/4 COLUMNS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </section>
+                        <!-- // PARAGRAPH FOURTH -->
+
+                        <!-- PARAGRAPH FOURTH // -->
+                        <section class="block-paragraph"> 
+                            <div class="three-fourth">
+                                <h3>3/4 COLUMNS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="one-fourth last">
+                                <h3>1/4 COLUMNS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </section>
+                        <!-- // PARAGRAPH FOURTH -->
+
+                        <!-- PARAGRAPH FIFTH // -->
+                        <section class="block-paragraph"> 
+                            <div class="one-fifth">
+                                <h3>1/5 COLUMNS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="two-fifth">
+                                <h3>2/5 COLUMNS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="two-fifth last">
+                                <h3>2/5 COLUMNS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </section>
+                        <!-- // PARAGRAPH FIFTH -->
+
+                        <!-- PARAGRAPH FIFTH // -->
+                        <section class="block-paragraph"> 
+                            <div class="one-fifth">
+                                <h3>1/5 COLUMNS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="three-fifth">
+                                <h3>3/5 COLUMNS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="one-fifth last">
+                                <h3>1/5 COLUMNS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </section>
+                        <!-- // PARAGRAPH FIFTH -->
+
+                        <!-- ICONS // -->
+                        <section class="block-paragraph">
+                            <h3>ICONS</h3>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-close</span> -->
+                                    <i class="icon-close" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-logout</span> -->
+                                    <i class="icon-logout" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-lockoff</span> -->
+                                    <i class="icon-lockoff" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-lockon</span> -->
+                                    <i class="icon-lockon" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-close-with-circle</span> -->
+                                    <i class="icon-close-with-circle" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-archive</span> -->
+                                    <i class="icon-archive" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-arrow</span> -->
+                                    <i class="icon-arrow" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-arrow-top</span> -->
+                                    <i class="icon-arrow-top" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-arrow-down</span> -->
+                                    <i class="icon-arrow-down" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-arrow-quicksand-down</span> -->
+                                    <i class="icon-arrow-quicksand-down" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-arrow-quicksand-up</span> -->
+                                    <i class="icon-arrow-quicksand-up" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-attention</span> -->
+                                    <i class="icon-attention" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-check</span> -->
+                                    <i class="icon-check" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-floppy</span> -->
+                                    <i class="icon-floppy" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-frozen</span> -->
+                                    <i class="icon-frozen" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-magnifer</span> -->
+                                    <i class="icon-magnifer" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-opposition</span> -->
+                                    <i class="icon-opposition" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-print</span> -->
+                                    <i class="icon-print" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-refund</span> -->
+                                    <i class="icon-refund" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-trash</span> -->
+                                    <i class="icon-trash" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <!-- <span>icon-wait</span> -->
+                                    <i class="icon-wait" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </section>
+                        <!-- // ICONS -->
+    
+                    </div>
+                </section>
+                <!-- // PAGE : STANDARD -->
+
+                <!-- FIX : TO REFACTOR // -->
+                <div class="clear"></div>
+                <!-- // FIX : TO REFACTOR -->
+                
+            </section>
+            <!-- // MAIN CONTENT -->
+
+            <!-- LAYOUT : FOOTER // -->
+            <footer role="contentinfo">
+                <div class="block-container">
+                    <nav class="block-navigation">
+                        <ul class="block-navigation-items">
+                            <li  class="block-navigation-item">
+                                <a href="#" class="block-navigation-item-link">
+                                    <span>Mentions légales</span>
+                                </a>
+                            </li>
+                            <li  class="block-navigation-item is-active">
+                                <a href="documentation.html" class="block-navigation-item-link">
+                                    <span>Documentation</span>
+                                </a>
+                            </li>
+                            <li  class="block-navigation-item">
+                                <a href="#" class="block-navigation-item-link">
+                                    <span>Support</span>
+                                </a>
+                            </li>
+                            <li  class="block-navigation-item">
+                                <a href="support-plus-kyc.html" class="block-navigation-item-link">
+                                    <span>Support +</span>
+                                </a>
+                            </li>
+                        </ul>  
+                    </nav>
+                    <a href="#">
+                        <img src="img/logo/logo-bpce.jpg" alt="Logo - BPCE">
+                    </a>  
+                </div>
+            </footer>
+            <!-- // LAYOUT : FOOTER -->
+
+            <!-- COMPONENT : PAGE BACKGROUND // -->
+            <div class="page-background"></div>
+            <!-- // COMPONENT : PAGE BACKGROUND -->
+
+        </div>
+
+        <script type="text/javascript">
+            host = location.origin;
+        </script>
+
+        <script src="js/vendor.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+        <script src="js/app.min.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
