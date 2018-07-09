@@ -10,6 +10,7 @@
     "grunt-contrib-concat": "*",
     "grunt-contrib-cssmin": "*",
     "grunt-contrib-jshint": "*",
+    "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
     "grunt-cssnano": "*",
