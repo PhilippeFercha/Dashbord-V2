@@ -1,0 +1,31 @@
+/***************************
+****************************
+NOTIFICATION
+CORE
+****************************
+****************************/
+
+.notification {
+
+	/// Couleur du bloc des notifications
+	/// @author Antoine Feron
+	/// @type Color
+	/// @since v1.0.0
+	$background-color-notification: #fbf0c0;
+
+
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 0;
+	z-index: 500;
+	background-color: $background-color-notification;
+	transition: bottom .45s ease;
+
+	.notification-button {
+		position: absolute;
+		top: 0;
+		right: 15px;
+	}
+}

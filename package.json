@@ -1,0 +1,26 @@
+{
+  "name": "espace-partenaires",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "*",
+    "css-mqpacker": "*",
+    "grunt": "*",
+    "grunt-contrib-compass": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-cssnano": "*",
+    "grunt-postcss": "*",
+    "grunt-sass": "*",
+    "grunt-sassdoc": "*",
+    "load-grunt-tasks": "*"
+  },
+  "dependencies": {
+    "libsass-compass-vertical-rhythm": "*",
+    "perfectionist": "*",
+    "postcss-prettify": "*"
+  }
+}

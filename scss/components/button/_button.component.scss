@@ -1,0 +1,18 @@
+/***************************
+****************************
+BUTTON BLOCK
+CORE
+****************************
+****************************/
+
+.button {
+	@include adjust-font-size-to(13px);
+	@include adjust-leading-to(1);
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+
+	span {
+		padding: 0 10px;
+	}
+}

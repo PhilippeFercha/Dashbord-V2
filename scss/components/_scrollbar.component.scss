@@ -1,0 +1,59 @@
+/***************************
+****************************
+SCROLLBAR 
+CORE
+****************************
+****************************/
+html,
+body {
+
+	/// Couleur de la scrollbar
+	/// @author Antoine Feron
+	/// @type Color
+	/// @since v1.0.0
+	$background-color-scrollbar: #125b97;
+
+
+	/* CUSTOM PROPERTIES ONLY IE*/
+	scrollbar-3dlight-color: $background-color-scrollbar;
+	scrollbar-arrow-color: $background-color-scrollbar;
+	scrollbar-base-color: $background-color-scrollbar;
+	scrollbar-darkshadow-color: $background-color-scrollbar;
+	scrollbar-face-color: $background-color-scrollbar;
+	scrollbar-highlight-color: $background-color-scrollbar;
+	scrollbar-shadow-color: $background-color-scrollbar;
+	scrollbar-track-color: $background-color-scrollbar;
+
+	.custom-scrollbar-horizontal {
+		@include MQ(tablet) {
+			overflow-y: hidden;
+			overflow-x: auto;
+		}
+
+		.block-content-scrollbar {
+			@include MQ(tablet) {
+				width: container();
+			}
+		}
+	}
+
+	.custom-scrollbar-vertical {
+		overflow-y: auto;
+		overflow-x: hidden;
+		height: 320px;
+		padding-right: 20px;
+	}
+
+	::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		background-color: #F5F5F5;
+	}
+	::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+		background-color: #F5F5F5;
+	}
+	::-webkit-scrollbar-thumb {
+		background-color: $background-color-scrollbar;
+	}
+}

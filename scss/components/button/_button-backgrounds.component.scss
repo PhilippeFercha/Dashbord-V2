@@ -1,0 +1,63 @@
+/***************************
+****************************
+BUTTON BLOCK
+BACKGROUNDS
+****************************
+****************************/
+
+.button {
+
+	/// Couleur de background du bouton
+	/// @author Antoine Feron
+	/// @type Color
+	/// @since v1.0.0
+	$background-color-button: $thirdly-color;
+
+	/// Couleur de police du douton
+	/// @author Antoine Feron
+	/// @type Color
+	/// @since v1.0.0
+	$color-button: #fff;
+
+	/// Couleur de background du dégradé (FROM)
+	/// @author Antoine Feron
+	/// @type Color
+	/// @since v1.0.0
+	$color-from-gradient-button: #125b97;
+
+	/// Couleur de background du dégradé (TO)
+	/// @author Antoine Feron
+	/// @type Color
+	/// @since v1.0.0
+	$color-to-gradient-button: #0086c7;
+
+
+	color: $color-button;
+	background-color: $background-color-button;
+
+	&.is-gradient-background,
+	&.is-gradient-reverse-background {
+		color: $color-button;
+
+		span {
+			color: $color-button;
+		}
+	}
+	
+	&.is-gradient-background {
+		*zoom: 1;
+		background-image: linear-gradient(to right, $color-from-gradient-button 0%, $color-to-gradient-button 100%);
+		background-size: 100%;
+	}
+	
+	&.is-gradient-reverse-background {
+		*zoom: 1;
+		background-image: linear-gradient(to right, $color-to-gradient-button 0%, $color-from-gradient-button 100%);
+		background-size: 100%;
+	}
+
+	&.is-grey {
+		color: $secondary-color;
+		background-color: $body-color;
+	}
+}

@@ -1,0 +1,18 @@
+/***************************
+****************************
+MODAL BLOCK
+SECTION
+****************************
+****************************/
+
+.modal {
+	.modal-section {
+		padding: 0 30px 0;
+		margin: 25px 0;
+
+		@include MQ(mobile) {
+			padding: 0 7.5px 0 15px;
+			margin: 12.5px 0;
+		}
+	}	
+}

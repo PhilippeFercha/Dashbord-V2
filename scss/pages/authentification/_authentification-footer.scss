@@ -1,0 +1,44 @@
+/***************************
+****************************
+AUTHENTIFICATION BLOCK
+FOOTER
+****************************
+****************************/
+
+.block-authentification {
+
+	/// Couleur de la description du footer
+	/// @author Antoine Feron
+	/// @type Color
+	/// @since v1.0.0
+	$color-footer-authentification: #fff;
+
+	/// Couleur de background du footer
+	/// @author Antoine Feron
+	/// @type Color
+	/// @since v1.0.0
+	$background-color-footer-authentification: $secondary-color;
+	
+
+	.block-authentification-footer {
+		@include span(full);
+		padding: 15px 20px;
+		background-color: $secondary-color;
+
+		p {
+			@include adjust-font-size-to(11px);
+			@include adjust-leading-to(1.25);
+			font-weight: 400;
+			text-align: center;
+
+			a {
+				text-decoration: underline;
+			}
+		}
+
+		p,
+		a {
+			color: $color-footer-authentification;
+		}
+	}
+}

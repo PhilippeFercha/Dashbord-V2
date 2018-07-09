@@ -1,0 +1,33 @@
+/***************************
+****************************
+MENU BLOCK
+LOGOUT
+****************************
+****************************/
+
+.block-menu {
+	.menu-logout {
+		@include adjust-font-size-to(18px);
+		@include adjust-leading-to(1);
+		font-weight: 500;
+		display: none;
+		position: absolute;
+		bottom: 105px;
+		left: 0;
+		width: 100%;
+		padding: 25px;
+		text-align: left;
+		color: #fff;
+		background-color: $array-head-color;
+
+		@include MQ(large) {
+			display: block;
+		}
+
+		i {
+			position: relative;
+			top: 2.5px;
+			left: 5px;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'espacepartenaire';
+  src:  url('#{$font-path}/espacepartenaire.eot?b7mzuh');
+  src:  url('#{$font-path}/espacepartenaire.eot?b7mzuh#iefix') format('embedded-opentype'),
+    url('#{$font-path}/espacepartenaire.ttf?b7mzuh') format('truetype'),
+    url('#{$font-path}/espacepartenaire.woff?b7mzuh') format('woff'),
+    url('#{$font-path}/espacepartenaire.svg?b7mzuh#espacepartenaire') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

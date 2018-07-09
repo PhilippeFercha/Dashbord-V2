@@ -1,0 +1,34 @@
+/***************************
+****************************
+SHORTCODES
+PARAGRAPHS CORE
+****************************
+****************************/
+.block-paragraph {
+
+	/// Couleur de background du bloc
+	/// @author Antoine Feron
+	/// @type Color
+	/// @since v1.0.0
+	$background-color-paragraph: #fff;
+
+
+	@include span(full);
+	margin-top: 25px;
+	padding: 25px;
+	background-color: $background-color-paragraph;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	ul {
+		margin-bottom: 10px;
+	}
+
+	ul li {
+		margin-bottom: 5px;
+	}
+}

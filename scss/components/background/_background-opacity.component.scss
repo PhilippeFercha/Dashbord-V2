@@ -1,0 +1,21 @@
+/***************************
+****************************
+BACKGROUND BLOCK
+OPACITY
+****************************
+****************************/
+
+.page-background {
+	&.is-opacity {
+		visibility: hidden;
+		background: rgba(0,0,0,.5);
+		opacity: 0;
+		transition: visibility 0s ease .45s, opacity .45s ease;
+
+		.show-background & {
+			visibility: visible;
+			opacity: 1;
+			transition: visibility 0s ease 0s, opacity .45s ease;
+		}
+	}
+}
