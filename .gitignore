@@ -1,0 +1,9 @@
+#fichier caché mac
+.DS_Store
+
+
+#fichiers bower
+bower_components/
+
+#fichiers node modules
+node_modules/
