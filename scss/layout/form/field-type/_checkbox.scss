@@ -1,0 +1,47 @@
+/***************************
+****************************
+FIELD TYPE
+CHECKBOX
+****************************
+****************************/
+
+.field-wrapper {
+	&.is-checkbox {
+		display: inline-block;
+
+		input {
+			&[type="checkbox"] {
+				display: none;
+
+				+ label {
+					display: inline-block;
+					cursor: pointer;
+					margin-bottom: 0;
+					padding-top: 2.5px;
+					padding-left: 30px;
+					font-weight: 300;
+
+					&:before {
+						content: "";
+						display: inline-block;
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 18px;
+						height: 18px;
+						border: 2px solid $thirdly-color;
+						background-color: #fff;
+					}
+				}
+
+				&:checked {
+					+ label {
+						&:before {
+							background-color: $thirdly-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Espace Partenaires",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "2.2.12",
+    "breakpoint-sass": "^2.7.1",
+    "libsass-compass-vertical-rhythm": "^1.0.0"
+  },
+  "devDependencies": {
+    "modernizr-mixin": "^3.0.7"
+  }
+}

@@ -1,0 +1,24 @@
+/***************************
+****************************
+ARRAY BLOCK
+CORE
+****************************
+****************************/
+
+.block-array {
+	@include span(full);
+	position: relative;
+	padding-top: 20px;
+	
+	.block-content-header,
+	.block-content-section {
+		@include span(full);
+	
+		.array-line {
+			.array-item-cell {
+				position: relative;
+				height: 60px;
+			}
+		}
+	}
+}

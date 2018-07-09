@@ -1,0 +1,53 @@
+/***************************
+****************************
+MODAL BLOCK
+HEADER
+****************************
+****************************/
+
+.modal {
+
+	/// Couleur de background du header
+	/// @author Antoine Feron
+	/// @type Color
+	/// @since v1.0.0
+	$background-color-header-modal: $secondary-color;
+
+
+	.modal-header {
+		position: relative;
+		padding: 25px 30px;
+		background-color: $background-color-header-modal;
+
+		@include MQ(mobile) {
+			padding: 15px;
+		}
+
+		.modal-header-title {
+			@include adjust-font-size-to(15px);
+			@include adjust-leading-to(1);
+			font-weight: 400;
+			color: #fff;
+			margin-bottom: 0;
+		}
+		
+		button {
+			@iunclude center(false, true);
+			left: auto;
+			right: 25px;
+
+			@include MQ(mobile) {
+				right: 5px;
+			}
+
+			i {
+				@include adjust-font-size-to(25px);
+				@include adjust-leading-to(1);
+
+				&:before {
+					color: #fff;
+				}
+			}
+		}
+	}
+}

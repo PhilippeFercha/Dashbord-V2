@@ -1,0 +1,19 @@
+/***************************
+****************************
+FIELDS
+CORE
+****************************
+****************************/
+
+.field-wrapper,
+.field-actions {
+	@include span(full);
+}
+
+.field-wrapper {
+	margin-bottom: 15px;
+}
+
+.field-actions {
+	text-align: center;
+}

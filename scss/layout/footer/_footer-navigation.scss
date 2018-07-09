@@ -1,0 +1,114 @@
+/***************************
+****************************
+FOOTER BLOCK
+NAVIGATION
+****************************
+****************************/
+
+footer {
+	&[role="contentinfo"] {
+
+		.block-container {
+			.block-navigation {
+				@include span(8.5 of 12 inside no-gutters);
+				margin-top: 15px;
+
+				@include MQ(tablet) {
+					@include span(full);
+					margin-top: 0;
+				}
+
+				.block-navigation-items {
+					.block-navigation-item {
+						display: inline-block;
+						margin-bottom: 15px;
+						transition: padding .45s ease;
+
+						@include MQ(desktop) {
+							padding-right: 15px;
+							padding-left: 15px;
+						}
+
+						@include MQ(tablet) {
+							padding: 15px;
+							margin-bottom: 0;
+						}
+
+						@include MQ(mobile) {
+							display: block;
+						}
+
+						&:not(:last-child) {
+							padding-right: 55px;
+
+							@include MQ(desktop) {
+								padding-right: 15px;
+							}
+
+							@include MQ(tablet) {
+								padding: 15px;
+							}
+						}
+
+						.block-navigation-item-link {
+							@include adjust-font-size-to(16px);
+							@include adjust-leading-to(1);
+							font-weight: 200;
+							color: #fff;
+
+							span {
+								position: relative;
+								color: #fff;
+
+								&:after {
+									content: '';
+									position: absolute;
+									bottom: -5px;
+									left: 0;
+									width: 0;
+									height: 2px;
+									background-color: #fff;
+									transition: width .45s ease;
+								}
+							}
+						}
+
+						&:hover,
+						&.is-active {
+							.block-navigation-item-link {
+								span {
+									&:after {
+										width: 100%;
+									}
+								}
+							}
+						}
+
+						&.is-active {
+							.block-navigation-item-link {
+								font-weight: 500;
+							}
+						}
+					}
+				}
+			}
+
+			> a {
+				@include span(3.5 last of 12 inside no-gutters);
+				position: absolute;
+				right: 0;
+				height: 100%;
+				padding: 10px;
+				background-color: #fff;
+
+				@include MQ(tablet) {
+					display: none;
+				}
+
+				img {
+					max-width: 200px;
+				}
+			}
+		}
+	}
+}

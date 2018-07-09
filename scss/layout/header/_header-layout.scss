@@ -1,0 +1,47 @@
+/***************************
+****************************
+HEADER BLOCK
+CORE
+****************************
+****************************/
+
+header {
+	&[role="banner"] {
+		@include span(full);
+		position: relative;
+		z-index: 200;
+		
+		.block-user {
+			background-color: $thirdly-color;
+			transition: background .45s ease, box-shadow .45s ease;
+
+			.menu-open & {
+				box-shadow: 0px 10px 15px 0 rgba(0,0,0,0.15);
+				background-color: $secondary-color;
+			}
+
+			> .block-container {
+				min-height: 70px;
+			}
+
+			.block-info,
+			.block-links {
+				@include adjust-font-size-to(16px);
+				@include adjust-leading-to(1);
+				font-weight: 300;
+				color: #fff;
+
+				a {
+					color: #fff;
+				}
+			}
+
+			.block-logo,
+			.block-info,
+			.block-links {
+				position: absolute;
+				top: 50%;
+			}
+		}
+	}
+}
