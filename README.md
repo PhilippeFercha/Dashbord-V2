@@ -4,6 +4,7 @@ Dashboard S-Money V2
 # "Local" environnement set-up
 
 node -v
+
 npm -v
 
 npm install npm@latest -g
