@@ -12,10 +12,10 @@ HEAD
 			border-left: 1px solid rgba(0,0,0,0.08);
 			text-align: center;
 			background-color: $array-head-color;
-			background-color: lighten($secondary-color, 60%);
+			background-color: #ffffff;
 	
 			&.is-highlight {
-				background-color: lighten($secondary-color, 60%);
+				background-color: #ffffff;
 			}
 	
 			.column-title {

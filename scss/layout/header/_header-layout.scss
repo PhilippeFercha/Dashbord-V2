@@ -12,7 +12,7 @@ header {
 		z-index: 200;
 		
 		.block-user {
-			background-color: $thirdly-color;
+			background-color: $secondary-color;
 			transition: background .45s ease, box-shadow .45s ease;
 
 			.menu-open & {

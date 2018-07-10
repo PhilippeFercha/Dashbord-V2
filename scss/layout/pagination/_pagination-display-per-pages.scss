@@ -18,7 +18,7 @@ DISPLAY PER PAGE
 			@include adjust-font-size-to(16px);
 			@include adjust-leading-to(1);
 			font-weight: 300;
-			color: #3f3f3f;
+			color: #ffffff;
 
 			@include MQ(mobile) {
 				margin-bottom: 10px;
@@ -35,7 +35,7 @@ DISPLAY PER PAGE
 					&:hover,
 					&.is-active {
 						color: #fff;
-						background-color: $thirdly-color;
+						background-color: $secondary-color;
 					}
 
 					&.button {
