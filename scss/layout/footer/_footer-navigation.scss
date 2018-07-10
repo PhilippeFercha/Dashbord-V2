@@ -54,11 +54,11 @@ footer {
 							@include adjust-font-size-to(16px);
 							@include adjust-leading-to(1);
 							font-weight: 200;
-							color: #fff;
+							color: $secondary-color;
 
 							span {
 								position: relative;
-								color: #fff;
+								color: $secondary-color;
 
 								&:after {
 									content: '';

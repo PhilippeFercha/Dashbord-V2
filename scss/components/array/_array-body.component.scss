@@ -18,7 +18,7 @@ BODY
 				background-color: #fff;
 
 				&.is-highlight {
-					background-color: lighten(#074070, 75%);
+					background-color: lighten($secondary-color, 75%);
 				}
 
 				.block-item-content {

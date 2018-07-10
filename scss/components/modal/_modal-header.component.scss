@@ -24,6 +24,7 @@ HEADER
 		}
 
 		.modal-header-title {
+			display: inline-block;
 			@include adjust-font-size-to(15px);
 			@include adjust-leading-to(1);
 			font-weight: 400;
@@ -33,6 +34,7 @@ HEADER
 		
 		button {
 			@iunclude center(false, true);
+			position: absolute;
 			left: auto;
 			right: 25px;
 

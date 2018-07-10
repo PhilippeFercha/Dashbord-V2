@@ -11,7 +11,7 @@ FILTER
 	/// @author Antoine Feron
 	/// @type Color
 	/// @since v1.0.0
-	$background-color-user-details-filter: $secondary-color;
+	$background-color-user-details-filter: #ffffff;
 
 
 	.block-content-wrapper {
@@ -35,7 +35,7 @@ FILTER
 			vertical-align: middle;
 			text-align: left;
 			text-transform: uppercase;
-			color: #fff;
+			color: $thirdly-color;
   			
   			@include MQ(tablet) {
   				@include span(full);
@@ -60,7 +60,7 @@ FILTER
 		.user-details-filter-description {
 			@include span(9 of 12);
 			margin-bottom: gutters();
-			color: #fff;
+			color: #3f3f3f;
 
 			@include MQ(tablet) {
   				@include span(full);
@@ -138,7 +138,7 @@ FILTER
 				top: 20px;
 				transform: translateY(-50%);
 				margin-right: 10px;
-				color: #fff;
+				color: $thirdly-color;
 		
 				@include MQ(mobile) {
 					@include center(false, false);
@@ -173,7 +173,7 @@ FILTER
 			input {
 				&[type="checkbox"] {
 					+label {
-						color: #fff;
+						color: $thirdly-color;
 					}
 				}
 			}

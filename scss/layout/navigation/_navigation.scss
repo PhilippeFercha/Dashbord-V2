@@ -100,6 +100,8 @@ CORE
 				}
 
 				&:hover {
+					color: #ffffff;
+					
 					&:before {
 						width: 100%;
 						transition: width .45s ease;
@@ -116,6 +118,7 @@ CORE
 				&.is-active {
 					background-color: $thirdly-color;
 					font-weight: 500;
+					color: #ffffff;
 
 					@include MQ(desktop) {
 						background-color: transparent;

@@ -46,14 +46,14 @@ BACKGROUNDS
 	
 	&.is-gradient-background {
 		*zoom: 1;
-		background-image: linear-gradient(to right, $color-from-gradient-button 0%, $color-to-gradient-button 100%);
-		background-size: 100%;
+		/*background-image: linear-gradient(to right, $color-from-gradient-button 0%, $color-to-gradient-button 100%);
+		background-size: 100%;*/
 	}
 	
 	&.is-gradient-reverse-background {
 		*zoom: 1;
-		background-image: linear-gradient(to right, $color-to-gradient-button 0%, $color-from-gradient-button 100%);
-		background-size: 100%;
+		/*background-image: linear-gradient(to right, $color-to-gradient-button 0%, $color-from-gradient-button 100%);
+		background-size: 100%;*/
 	}
 
 	&.is-grey {

@@ -29,7 +29,7 @@ npm install grunt-contrib-sass --save-dev
 
 # Install bower
 
-npm install -g bower
+sudo npm install -g bower
 
 sudo bower install --allow-root
 

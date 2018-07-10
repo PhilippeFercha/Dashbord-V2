@@ -12,9 +12,10 @@ HEAD
 			border-left: 1px solid rgba(0,0,0,0.08);
 			text-align: center;
 			background-color: $array-head-color;
+			background-color: lighten($secondary-color, 60%);
 	
 			&.is-highlight {
-				background-color: $thirdly-color;
+				background-color: lighten($secondary-color, 60%);
 			}
 	
 			.column-title {
@@ -23,7 +24,7 @@ HEAD
 				font-weight: 400;
 				left: 50%;
 				transform: translate(-65%, -50%);
-				color: #fff;
+				color: #3f3f3f;
 			}
 	
 			.column-sort {
