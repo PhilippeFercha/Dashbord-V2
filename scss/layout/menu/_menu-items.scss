@@ -56,7 +56,6 @@ ITEMS
 
 			&:last-child {
 				position: relative;
-				background-color: $thirdly-color;
 
 				@include MQ(large) {
 					display: none;

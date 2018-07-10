@@ -23,7 +23,7 @@ NOTIFICATIONS
 		}
 
 		.block-content {
-			min-height: 150px;
+			min-height: 70px;
 
 			@include MQ(tablet) {
 				min-height: auto;

@@ -20,7 +20,7 @@ CORE
 	height: 100%;
 	min-height: 100vh;
 	z-index: 200;
-	background-color: $thirdly-color;
+	background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(146,79,255,1) 250%) no-repeat;
 
   	@include animate(show-navigation, .45s, linear, normal);
 
@@ -40,7 +40,7 @@ CORE
 			position: relative;
 			margin-bottom: 0;
 			list-style-type: none;
-			border-bottom: 1px solid $secondary-color;
+			border-bottom: 1px solid #B5B2B8;
 
 			@include MQ(desktop) {
 				display: inline-block;
@@ -50,8 +50,8 @@ CORE
 			&.username {
 				@include adjust-font-size-to(25px);
 				@include adjust-leading-to(1);
-				color: #fff;
-				padding: 20px 30px;
+				color: $secondary-color;
+				padding: 20px;
 
 				@include MQ(desktop) {
 					display: none;
@@ -62,9 +62,9 @@ CORE
 				@include adjust-font-size-to(15px);
 				@include adjust-leading-to(1);
 				font-weight: 300;
-				color: #fff;
+				color: $secondary-color;
 				position: relative;
-				padding: 15px 30px;
+				padding: 15px 20px;
 
 				@include MQ(desktop) {
 					padding: 10px 15px;
@@ -78,15 +78,16 @@ CORE
 					width: 0;
 					height: 100%;
 					z-index: -10;
-					background-color: $secondary-color;
+					background-color: $thirdly-color;
 					transition: width .45s ease;
 				}
 
 				&:after {
 					content: "";
 					position: absolute;
-					bottom: 20px;
+					top: 50%;
 					left: 0;
+    				transform: translateY(-50%);
 					border-left: 10px solid  $thirdly-color;
 					border-top: 10px solid transparent;
 					border-bottom: 10px solid transparent;
@@ -106,14 +107,14 @@ CORE
 
 					&:after {
 						left: 100%;
-						border-left-color: $secondary-color;
+						border-left-color: $thirdly-color;
 						opacity: 1;
 						transition: left .45s ease, opacity .45s ease;
 					}
 				}
 
 				&.is-active {
-					background-color: $secondary-color;
+					background-color: $thirdly-color;
 					font-weight: 500;
 
 					@include MQ(desktop) {
@@ -122,7 +123,7 @@ CORE
 
 					&:after {
 						left: 100%;
-						border-left-color: $secondary-color;
+						border-left-color: $thirdly-color;
 						opacity: 1;
 					}
 				}
